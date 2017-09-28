@@ -1,0 +1,9 @@
+import subprocess
+import os
+
+
+listOfShellCommands = ["python main.py 'AskHelpchat' > helpchat.html","python main.py 'meziapp' > meziapp.html"," python main.py '@magic' > magic.html","python main.py '@operator' > operator.html","python main.py 'GoodServiceApp' > GoodserviceApp.html","python main.py 'MagicTigerApp' > magictiger.html"] 
+
+for shellCommands in listOfShellCommands:
+	subprocess.check_output(shellCommands,shell=True)
+				
